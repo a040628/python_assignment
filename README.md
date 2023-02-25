@@ -1,6 +1,6 @@
 # Take-Home Assignment
 
-The goal of this take-home assignment is to evaluate your abilities to use API, data processing and transformation, SQL, and implement a new API service in Python.
+The goal of this take-home assignment is to evaluate the abilities to use API, data processing and transformation, SQL, and implement a new API service in Python
 
 
 ## How to Run
@@ -8,9 +8,9 @@ The goal of this take-home assignment is to evaluate your abilities to use API, 
 ```
 docker-compose up --build
 ```
-2. This will start the application and print the logs to the console. To stop the application, press Ctrl+C.
+2. This will start the application and print the logs to the console. To stop the application, press Ctrl+C
 
-3. Run the following command to retrieve the financial data of Two given stocks (IBM, Apple Inc.)for the most recently two weeks:
+3. (Task 1)Run the following command to retrieve the financial data of Two given stocks (IBM, Apple Inc.)for the most recently two weeks:
 ```
 python get_raw_data.py
 ```
@@ -20,7 +20,7 @@ python get_raw_data.py
 ```
 docker-compose up -d
 ```
-5. Now users can can make requests to http://localhost:5000. 
+5. (Task 2)Now users can make requests to http://localhost:5000
    For example, to get financial data from the API:
 ```
 http://localhost:5000/api/financial_data?symbol=AAPL&start_date=2023-02-01&end_date=2023-03-01
